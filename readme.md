@@ -8,52 +8,34 @@ And please do not hesitate to reach out to me directly via email at jondinu@gmai
 
 You will need:
 
-* HTTP web server
-    * On OSX and Linux `python -m SimpleHTTPServer`
-    * On Windows, I recommend downloading [Mongoose][mongoose]
 * Text Editor: I recommend [Sublime Text][sublime]
 * A (modern) Web Browser: I recommend [Google Chrome][chrome]
+* [p5.js Editor](https://p5js.org/download/)
 
-Once you have downloaded the software above, you are ready to start making some data visualizations!
-
-![](http://media2.giphy.com/media/rOTGSPxvJJY7m/giphy.gif)
-
-1. Get the files: Download the [ZIP][zip] or `git clone https://github.com/Jay-Oh-eN/civic-data-visualization.git` (git [tutorial][gitit]) this repository.
-2. Start you HTTP web server
-    * If using a `SimpleHTTPServer`, navigate into the repository folder (`hands-on-d3`) on your machine before you start the server.
-    * If using Mongoose, set the 'Shared Directory' to be the repository folder.
-3. Navigate with a web browser to `http://localhost:[port]` where [port] is the port the server has started on (`SimpleHTTPServer` defaults to port 8000)
-4. You should see the directory listing, click on any of the `.html` files and you should see the charts.
-
-__If you need some help with Javascript or D3, refer to the [tutorials](#resources) below__
 
 ### Libraries Used
-* [p5.js][d3]
-
-## Goals
-
-By the end of this workshop you should be able to:
-
-* Describe the data visualization process and the difference between explanatory and exploratory visualizations
-* Understand the Javascript functions, closures and callbacks
-* Know how to load multiple data files with D3
-* Determine the best chart type for your type of data
-* Create author driven narratives with animation (`setInterval()`)
-* Create engaging user interaction through Javascript events such as dragging, hovering, and clicking
-* Tie this interaction into a reader driven narrative
-* Contextualize your data through the use of secondary datasets
+* [p5.js](https://p5js.org/)
 
 ## Workshop
 
 ### 0: Getting/Cleaning Data
 
+* [NASA Climate Data](http://climate.nasa.gov/vital-signs/carbon-dioxide/)
+* [Prince's Studio Albums (Wikipedia)](https://docs.google.com/spreadsheets/d/1FiPbFhuHwVu4NSbeZWFGDh4XsZ0JGT1LDGl9p0QSzzc)
+* [Quandl (Financial)](https://www.quandl.com)
+* [SF Evictions](https://data.sfgov.org/Housing-and-Buildings/Eviction-Notices/5cei-gny5)
+* [treasury.io](http://treasury.io/)
+
 #### Exercise
 
-* Rather than loading the NASA temperature data, use the NYC weather data
+1. [Loading Data](prince/index.html)
+2. [Triggering Audio](prince/index2.html)
+3. [Sonic Modulation](weather/index.html)
+4. [User Interaction](theremin/index.html)
+5. [Sequencing](theremin/matrix.html)
 
-### 1: Triggering Audio (beats)
+<!-- ### 1: Triggering Audio (beats)
 
-* 
 
 ### 2: Modulating Audio
 
@@ -65,55 +47,51 @@ By the end of this workshop you should be able to:
 
 #### Filters
 
+### Exercise
+
+Rather than loading the NASA temperature data, use [this NYC weather data](https://bl.ocks.org/emeeks/raw/2fffa9abe50ac97603c7/cloud_rain_freeze.json) (from Elijah Meeks [visualization](https://bl.ocks.org/emeeks/2fffa9abe50ac97603c7))
+
 ### 3: Editorializing Audio
+
+## Static Data
+
+## Real time!
 
 #### Composition/Arrangement
 
 #### Sequencing/Chords
 
-## Sonification Examples
+## Sonification Examples -->
 
-### Author Driven
+### Data as Driver
 
-#### [Facebook IPO][facebook] (NYT)
+* [bitListen](http://www.bitlisten.com/)
+* [Listen to Wikipedia](http://listen.hatnote.com/)
+* [TweetScapes](https://www.youtube.com/watch?v=0lKSFlB_-Q0)
+* [NYC Subway Song](http://www.fastcodesign.com/1663129/mtame-google-engineer-turns-subway-lines-into-musical-instruments)
+* [ChartWAVE](http://chartbeat.github.io/chartwave/?host=gizmodo.com)
+* [James Murphy meets IBM](https://www.youtube.com/watch?v=BUkwbsd-NcA)
 
-![][facebook_ipo_nyt]
+### Editorialization
 
-#### [Syrian Refugee Crisis][syria] (Wesam Manassra)
+* [NYC Subway Income Disparity](http://hyperallergic.com/180725/data-driven-music-to-for-the-disharmony-of-new-yorks-income-inequality/)
+* [FMS Symphony (Federal Reserve)](https://thomaslevine.com/!/fms-symphony/)
 
-![][syria-img]
+### Augmentation
 
-### Viewer Driven
+* [p5 Flocking Audio Effect](http://b2renger.github.io/pages_p5js/flock/index.html)
 
-#### [Crimespotting][crimespotting] (Stamen)
+### Audio as Tool
 
-![][crimespotting-screenshot]
+* [Gieger Counter](https://en.wikipedia.org/wiki/Geiger_counter)
+* [Higgs Boson](https://lhcopensymphony.wordpress.com/the-first-higgs-boson-data-sonifcation/)
 
-### Martini Glass (mix of author and viewer)
-
-#### [Visualizing MBTA Data][mbta] (Mike Barry and Brian Card)
-
-![][mbta-img]
-
-#### [Gun Deaths][guns] (Periscopic)
-
-![][guns-img]
-
-#### [Flight Delays][flights] (538)
-
-![][flights-img]
-
-#### [Seven Modern Remakes Of The Most Famous Graphs Ever Made][plotly-remake] (Plotly)
-
-![napolean](http://i.imgur.com/wgYtD37.png)
-
-## Next Steps
+<!-- ## Next Steps
 * [Visual Storytelling with D3 (Ritchie King)][ritchie]
 * [Data Visualization and D3.js (Udacity)][udacity]
 * [Interactive Data Vizualization (Scott Murray)][murray]
 * [CSE512: Data Visualization (University of Washington)][uw-viz]
-* [D3 Meetups][meetups]
+* [D3 Meetups][meetups] -->
 
-## Resources
-
-https://bl.ocks.org/emeeks/raw/2fffa9abe50ac97603c7/cloud_rain_freeze.json
+<!-- ## Resources
+ -->

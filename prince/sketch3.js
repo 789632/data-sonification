@@ -77,6 +77,9 @@ function playNote(position, duration) {
 
 function draw() {
   // If we are autoplaying and it's time for the next note
+  
+  if (millis() % 1000)
+  
   if (autoplay && millis() > trigger){
     playNote(albums.findRow(index, "Year"), 400);
 
