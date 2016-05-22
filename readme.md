@@ -4,6 +4,8 @@ If you have ever wanted to break past the limits of the eye and explore alternat
 
 And please do not hesitate to reach out to me directly via email at jondinu@gmail.com or over twitter @jonathandinu
 
+[![Join the chat at https://gitter.im/Jay-Oh-eN/data-sonification](https://badges.gitter.im/Jay-Oh-eN/data-sonification.svg)](https://gitter.im/Jay-Oh-eN/data-sonification?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## Getting Setup
 
 _it is also recommended to bring a pair of your own headphones_
