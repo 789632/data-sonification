@@ -25,13 +25,13 @@ function setup() {
   
   // Create and start the pulse wave oscillator
   pulse = new p5.Pulse();
-  pulse.amp(0.5);
+  pulse.amp(1);
   pulse.freq(440);
   pulse.start();
 }
 
 function draw() {
-  
+  // console.log(millis());
   var c = map(position.x, 0, width, 0, 255);
   var c2 = map(position.y, 0, width, 0, 255);
     
@@ -71,15 +71,15 @@ function draw() {
   w = constrain(w, 0, 1);
   var v = map(position.y, 0, height, 0, 1);
   v = constrain(v, 0, 1);
+
   masterVolume(v);
   pulse.width(w);
   
-  console.log(wind)
+ // console.log(position)
   
 }
 
 function gotWeather(weather) {
-  
   // Get the angle (convert to radians)
   var angle = radians(Number(weather.wind.deg));
   // Get the wind speed
