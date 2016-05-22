@@ -2,23 +2,27 @@ When people think about communicating data they often gravitate towards graphics
 
 If you have ever wanted to break past the limits of the eye and explore alternative methods of visualizing data, this workshop is for you! You WILL learn how to trigger sounds based on data and user interaction, modulate audio (pitch, tempo, etc.), and "play" a CSV using p5.js (with a little D3.js thrown in). In this workshop you WON'T learn how to create synthesizers, work with waveforms, or process sonic textures unfortunately (there are other workshops for that). Basic programming experience (ideally with Javascript) is necessary but experience with p5.js or D3.js is not required (or assumed).
 
-And please do not hesitate to reach out to me directly via email at jondinu@gmail.com or over twitter @clearspandex
+And please do not hesitate to reach out to me directly via email at jondinu@gmail.com or over twitter @jonathandinu
 
 ## Getting Setup
 
+_it is also recommended to bring a pair of your own headphones_
+
 You will need:
 
-* Text Editor: I recommend [Sublime Text][sublime]
-* A (modern) Web Browser: I recommend [Google Chrome][chrome]
 * [p5.js Editor](https://p5js.org/download/)
 
+__OR__
+
+* Text Editor: I recommend [Sublime Text](http://www.sublimetext.com/2)
+* A (modern) Web Browser: I recommend [Google Chrome](https://www.google.com/chrome/browser/desktop/)
 
 ### Libraries Used
 * [p5.js](https://p5js.org/)
 
 ## Workshop
 
-### 0: Getting/Cleaning Data
+### 0: Getting Data
 
 * [NASA Climate Data](http://climate.nasa.gov/vital-signs/carbon-dioxide/)
 * [Prince's Studio Albums (Wikipedia)](https://docs.google.com/spreadsheets/d/1FiPbFhuHwVu4NSbeZWFGDh4XsZ0JGT1LDGl9p0QSzzc)
@@ -28,16 +32,28 @@ You will need:
 
 #### Exercise
 
-1. [Loading Data](prince/index.html)
+1. [Generating (and importing) Sounds]()
+2. [Loading Data]()
+3. [Triggering Sounds]()
+4. [Sonic Modulation]()
+5. [User Interaction]()
+
 2. [Triggering Audio](prince/index2.html)
+1. [Loading Data](prince/index.html)
 3. [Sonic Modulation](weather/index.html)
 4. [User Interaction](theremin/index.html)
 5. [Sequencing](theremin/matrix.html)
 
-<!-- ### 1: Triggering Audio (beats)
+1. Using the [loadTable()]() function, load one of the Sea in the [data/](data) folder into your sketch.
+2. To make sure the data was loaded, print how many rows and columns are in the dataset as well as the first row of data.
+3.
 
+8. Find a dataset on the [Durham open data](https://opendurham.nc.gov/page/home/) portal to sonify (it should have some element of time to it).
+9.
 
-### 2: Modulating Audio
+### 3: Triggering Sounds
+
+### 4: Modulating Audio
 
 #### Amplitude
 
@@ -61,7 +77,7 @@ Rather than loading the NASA temperature data, use [this NYC weather data](https
 
 #### Sequencing/Chords
 
-## Sonification Examples -->
+## Sonification Examples
 
 ### Data as Driver
 
@@ -86,12 +102,30 @@ Rather than loading the NASA temperature data, use [this NYC weather data](https
 * [Gieger Counter](https://en.wikipedia.org/wiki/Geiger_counter)
 * [Higgs Boson](https://lhcopensymphony.wordpress.com/the-first-higgs-boson-data-sonifcation/)
 
-<!-- ## Next Steps
-* [Visual Storytelling with D3 (Ritchie King)][ritchie]
-* [Data Visualization and D3.js (Udacity)][udacity]
-* [Interactive Data Vizualization (Scott Murray)][murray]
-* [CSE512: Data Visualization (University of Washington)][uw-viz]
-* [D3 Meetups][meetups] -->
+## References
 
-<!-- ## Resources
- -->
+### Programming
+
+* [JS for Cats](http://jsforcats.com/)
+* [Codeschool Interactive Tutorial](https://www.codeschool.com/learn/javascript)
+* [My Javascript Resource List](https://github.com/Jay-Oh-eN/awesome-resources/blob/master/javascript.md)
+* [p5 Javascript resource list](https://github.com/processing/p5.js/wiki/Education#js-resources)
+* [Git (and Github) for Poets](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV)
+* [Jonathan's Favorite Datasets](https://github.com/Jay-Oh-eN/awesome-resources/blob/master/datasets.md)
+
+### p5.js
+
+* [Official p5 Tutorials](https://p5js.org/tutorials/)
+* [p5 Videos](https://github.com/processing/p5.js/wiki/Education#videos)
+    * [Dan Shiffman's Videos](https://www.youtube.com/user/shiffman/playlists?sort=dd&shelf_id=14&view=50)
+* [Nature of Code (in p5js)](https://github.com/shiffman/The-Nature-of-Code-Examples-p5.js)
+* [Classes that use/teach p5](https://github.com/processing/p5.js/wiki/Education#class--workshop-syllabi)
+
+### Audio
+* [MIDI for Programmers](https://www.cs.cmu.edu/~music/cmsip/readings/MIDI%20tutorial%20for%20programmers.html)
+* [p5js-osc](https://github.com/genekogan/p5js-osc)
+* [Web MIDI](https://webaudiodemos.appspot.com/slides/index.html#/)
+    * [Demos](https://webaudiodemos.appspot.com/)
+* [Web MIDI + p5](https://github.com/marianmoldovan/p5js-playground/blob/master/sketch.js)
+* [Visualizing Music with P5](https://github.com/therewasaguy/p5-music-viz)
+* [freesound.org](https://www.freesound.org/)
