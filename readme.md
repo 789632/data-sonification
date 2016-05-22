@@ -34,50 +34,29 @@ __OR__
 
 #### Exercise
 
-1. [Generating (and importing) Sounds]()
-2. [Loading Data]()
-3. [Triggering Sounds]()
-4. [Sonic Modulation]()
-5. [User Interaction]()
+1. Using the [loadTable()](https://p5js.org/reference/#/p5/loadTable) function, load the Housing Economic data in the [Housing/data/housing_bubble.csv](data) folder into your sketch.
+2. To make sure the data was loaded, print how many rows and columns are in the dataset as well as the first row of data. use the functions defined on the `Table` object: [https://p5js.org/reference/#/p5.Table](https://p5js.org/reference/#/p5.Table)
+3. In the `draw()` function, play a static note using the `playNote()` function that has been defined for each row in the CSV file. Pick any MIDI number and set a fixed duration.
+4. Advance the index to 'play' the next row of the CSV.
 
-2. [Triggering Audio](prince/index2.html)
-1. [Loading Data](prince/index.html)
-3. [Sonic Modulation](weather/index.html)
-4. [User Interaction](theremin/index.html)
-5. [Sequencing](theremin/matrix.html)
+  Now that you can trigger a random note at a fixed duration for each data point, it is time to modulate the pitch (and anything else we want) based on the data! To  do this however we need to first compute a sensible mapping from our data to MIDI notes.
 
-1. Using the [loadTable()]() function, load one of the Sea in the [data/](data) folder into your sketch.
-2. To make sure the data was loaded, print how many rows and columns are in the dataset as well as the first row of data.
-3.
-
-8. Find a dataset on the [Durham open data](https://opendurham.nc.gov/page/home/) portal to sonify (it should have some element of time to it).
-9.
-
-### 3: Triggering Sounds
-
-### 4: Modulating Audio
-
-#### Amplitude
-
-#### Frequency/Pitch
-
-#### Tempo/Timing
-
-#### Filters
-
-### Exercise
-
-Rather than loading the NASA temperature data, use [this NYC weather data](https://bl.ocks.org/emeeks/raw/2fffa9abe50ac97603c7/cloud_rain_freeze.json) (from Elijah Meeks [visualization](https://bl.ocks.org/emeeks/2fffa9abe50ac97603c7))
-
-### 3: Editorializing Audio
-
-## Static Data
-
-## Real time!
-
-#### Composition/Arrangement
-
-#### Sequencing/Chords
+4. Find the minimum and maximum values for the `house_price_index`. You will use the p5 `min()` and `max()` functions.
+5. Also we need to compute a sensible duration for each note. To do so we can set a fixed length for the entire 'song' and figure out how long each note needs to be. Determine the length of each note by dividing the `total_length` by the number of data points you have.
+  Now that we have a proper duration and the extent (min/max) of our `house_price_index` column we can start modulating our notes.
+6. Refactor the `playNote()` function to play a properly scaled MIDI note whose frequency corresponds to the value of `house_price_index` for the given row. You will need to use the `map()` function: [https://p5js.org/reference/#/p5/map](https://p5js.org/reference/#/p5/map)
+7. One oscillator is good, but two oscillators are gooder-er! Create a second voicing to sonify the `delinquency` column. You will copy much of what we have done with our first voicing:
+    * Create an oscillator
+    * Determine the min/max of the columns
+    * Create a map() to convert fro ma data value -> a MIDI note
+    * Call the `playNote()` function passing in this new Oscillator and the min/max values for the column
+8. We can modulate other characteristic of the sound without creating an entirely new voicing. Module the `masterVolume()` of the sketch to correspond to the `houses_sold` column (you will need to create a `map()` again).
+9. And the last touch we want to put on this is a bit of author __editorialization__ to express how we feel about the housing crisis. Play the sound clip loaded in the `preload()` function at an appropriate point in the sonification (maybe just as the housing market crashes). You can hard code this value in the index.
+10. Congratulations! You just sonified the Housing Crisis... now its time for some fun.
+    * Play with other voicings and oscillators
+    * Modulate other characteristics of the sound (tempo, filters, etc.)
+    * Load in your own sounds to trigger (I like freesounds.org)
+    * Find a dataset on the [Durham open data](https://opendurham.nc.gov/page/home/) portal to sonify (it should have some element of time to it).
 
 ## Sonification Examples
 

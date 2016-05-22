@@ -107,6 +107,18 @@ footer: Jonathan Dinu // Moogfest // May 22nd, 2016 // @jonathandinu
 
 ---
 
+## Workshop
+
+* Playing Sounds with P5 (livecode)
+* Loading and Manipulating Data (livecode)
+* __Play a note for each Data point in the Housing Data__
+* Modulating Sound (livecode)
+* Loading in Sound Files (livecode)
+* __Modulate the voicings in the Housing sketch__
+* __Have fun with your own data!__
+
+---
+
 ## What is it Good For
 
 ---
