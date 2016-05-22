@@ -6,6 +6,8 @@ And please do not hesitate to reach out to me directly via email at jondinu@gmai
 
 ## Getting Setup
 
+[![Join the chat at https://gitter.im/Jay-Oh-eN/data-sonification](https://badges.gitter.im/Jay-Oh-eN/data-sonification.svg)](https://gitter.im/Jay-Oh-eN/data-sonification?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 You will need:
 
 * Text Editor: I recommend [Sublime Text][sublime]
